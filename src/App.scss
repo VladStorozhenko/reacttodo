@@ -1,0 +1,65 @@
+body {
+  height: 100vh;
+  background: rgb(230, 230, 230);
+}
+#header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(170, 29, 29, 0.753);
+  color: white;
+}
+.title {
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+}
+.form-wrapper {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+}
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  input,
+  button,
+  label {
+    color: white;
+  }
+  label {
+    &.miu-focused {
+      color: black;
+    }
+  }
+  input {
+    flex: 3;
+  }
+  button {
+    color: white;
+  }
+}
+.add-button {
+  height: 50px;
+  background: red;
+  span {
+    padding: 0;
+  }
+}
+#todo {
+  width: 50%;
+  margin: 0 auto;
+  .todo-list {
+    display: flex;
+    justify-content: space space-around;
+    align-items: center;
+    flex-direction: column;
+    .todo-body {
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
